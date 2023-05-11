@@ -5,12 +5,12 @@ import os
 import sys
 import re
 from neo4j import GraphDatabase
-
+import openai_api
 
 class QueryParser:
     def __init__(self):
         self.driver = GraphDatabase.driver("bolt://localhost:7687", 
-                                        auth=('neo4j', 'Abcd1234'))
+                                        auth=('neo4j', 'neo4j'))
 
     def parse_query(self, query):
         # parse query 
