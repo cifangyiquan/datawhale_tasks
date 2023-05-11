@@ -11,7 +11,7 @@
 ## 方案简介
 
 1. 使用neo4j构造一个电影的知识图谱。
-![知识图谱](./imgs/kg.jpeg)
+![知识图谱](../imgs/kg.jpeg)
 
 2. 使用chatgpt用来分析实体和关系。并构造出neo4j的查询语句。比如：
 > **prompt：**
@@ -32,4 +32,4 @@ MATCH (周星驰:Person)-[:Acted_In]->(电影:Movie)<-[:Acted_In]-(冯小刚:Per
 ```
 
 3.执行查询语句。去得结果返回：
-![问答系统](./imgs/qa.jpeg)
+![问答系统](../imgs/qa.jpeg)
